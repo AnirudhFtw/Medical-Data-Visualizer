@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # 1
-df = pd.read_csv("/workspace/boilerplate-medical-data-visualizer/medical_examination.csv")
+df = pd.read_csv("medical_examination.csv")
 
 # 2
 df['overweight'] = (df['weight'] / ((df['height'] / 100) ** 2)).apply(lambda x: 1 if x > 25 else 0)
